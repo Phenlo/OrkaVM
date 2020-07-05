@@ -1,0 +1,10 @@
+#ifndef __ORKAVM_CONFIG_H__
+#define __ORKAVM_CONFIG_H__
+
+#define ORKAVM_VERSION_MAJOR    @OrkaVM_VERSION_MAJOR@
+#define ORKAVM_VERSION_MINOR    @OrkaVM_VERSION_MINOR@
+
+#define ORKAVM_AUTHOR           "@OrkaVM_AUTHOR@"
+#define ORKAVM_VERSION          "v" "@OrkaVM_VERSION@"
+
+#endif

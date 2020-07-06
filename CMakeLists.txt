@@ -7,9 +7,11 @@ set(CMAKE_C_STANDARD_REQUIRED True)
 set(${PROJECT_NAME}_AUTHOR "Andrzej Brzeziński")
 
 configure_file(
-    ${PROJECT_SOURCE_DIR}/include/OrkaVM/config.h.in
-    ${PROJECT_BINARY_DIR}/include/OrkaVM/config.h
+    ${PROJECT_SOURCE_DIR}/config/OrkaVM/config.h.in
+    ${PROJECT_BINARY_DIR}/config/OrkaVM/config.h
 )
 
-include_directories(${PROJECT_BINARY_DIR}/include)
+include_directories(${PROJECT_BINARY_DIR}/config)
+include_directories(${PROJECT_SOURCE_DIR}/include)
+
 add_subdirectory(src)

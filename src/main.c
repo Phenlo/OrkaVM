@@ -1,8 +1,11 @@
+#include <OrkaVM/orka.h>
+
 #include <stdio.h>
-#include <OrkaVM/config.h>
 
 int main( int argc, char * argv[] )
 {
-    printf( "OrkaVM " ORKAVM_VERSION " by " ORKAVM_AUTHOR "\n" );
+    static struct orka_env env;
+    orka_env_init( &env, argc, argv );
+
     return 0;
 }
